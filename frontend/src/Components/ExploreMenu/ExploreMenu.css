@@ -28,7 +28,7 @@
   min-width: 80px;
   cursor: pointer;
   border-radius: 50%;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .explore-menu-list-item p {
