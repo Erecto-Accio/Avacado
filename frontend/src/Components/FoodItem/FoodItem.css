@@ -6,9 +6,23 @@
   transition: 0.3s;
   animation: fadeIn 3s;
 }
-.food-item-img-container img {
+.food-item-img {
   width: 100%;
   border-radius: 15px 15px 0px 0px;
+}
+
+.food-item-img-container {
+  position: relative;
+}
+
+.food-item-img-container .add {
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .food-item-info {
   padding: 20px;
@@ -36,4 +50,19 @@
   font-size: 22px;
   font-weight: 500;
   margin: 10px 0;
+}
+
+.food-item-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 6px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+.food-item-counter img {
+  width: 30px;
 }
