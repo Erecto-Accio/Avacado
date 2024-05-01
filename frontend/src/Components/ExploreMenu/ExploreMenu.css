@@ -27,7 +27,7 @@
   width: 7.5vw;
   min-width: 80px;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 50%;
   transition: 0.5s;
 }
 
@@ -45,7 +45,7 @@
   border: none;
 }
 
-.active {
-  border: 2px solid #485935;
+.explore-menu .active {
+  border: 5px solid orangered;
   padding: 2px;
 }
