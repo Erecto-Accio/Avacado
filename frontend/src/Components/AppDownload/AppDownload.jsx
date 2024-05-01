@@ -5,7 +5,7 @@ const AppDownload = () => {
   return (
     <div className="app-download">
       <h3>
-        For Better Experience Download our <br /> Avacado app
+        For Better Experience Download Our <br /> Avacado App
       </h3>
 
       <div className="app-download-img-container">
