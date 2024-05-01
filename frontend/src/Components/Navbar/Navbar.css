@@ -7,6 +7,7 @@
 
 .navbar > .logo {
   width: 150px;
+  animation: fadeIn 3s;
 }
 
 .navbar > .navbar-menu {
