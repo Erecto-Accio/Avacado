@@ -21,6 +21,10 @@
   text-align: center;
   gap: 30px;
   margin: 20px 0;
+  overflow-x: scroll;
+}
+.explore-menu-list::-webkit-scrollbar {
+  display: none;
 }
 
 .explore-menu-list-item img {
