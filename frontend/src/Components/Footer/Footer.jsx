@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src={assets.logo} alt="" />
+          <img src={assets.logo} alt="" loading="lazy" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
             alias quidem, porro quos perferendis et illum quae. Quas rerum quo
@@ -14,9 +14,9 @@ const Footer = () => {
             aspernatur!
           </p>
           <div className="footer-social-icons">
-            <img src={assets.facebook_icon} alt="" />
-            <img src={assets.instagram_icon} alt="" />
-            <img src={assets.whatsapp_icon} alt="" />
+            <img src={assets.facebook_icon} alt="" loading="lazy" />
+            <img src={assets.instagram_icon} alt="" loading="lazy" />
+            <img src={assets.whatsapp_icon} alt="" loading="lazy" />
           </div>
         </div>
 
