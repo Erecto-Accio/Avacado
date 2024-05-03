@@ -11,6 +11,10 @@
   border-radius: 15px 15px 0px 0px;
 }
 
+.food-item:hover {
+  transform: scale(1.1);
+}
+
 .food-item-img-container {
   position: relative;
 }
@@ -22,7 +26,8 @@
   right: 15px;
   cursor: pointer;
   border-radius: 50%;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);}
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 .food-item-info {
   padding: 20px;
 }

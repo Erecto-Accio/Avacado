@@ -34,7 +34,7 @@
   flex-direction: column;
   gap: 20px;
 }
-input {
+.login-popup-inputs > input {
   outline: none;
   padding: 15px 20px;
   border: 1px solid #555;
