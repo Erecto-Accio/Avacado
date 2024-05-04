@@ -50,7 +50,7 @@ const Navbar = ({ showLogin }) => {
           <Link to="/cart">
             <img src={assets.basket_icon} alt="" />
           </Link>
-          <div className={getTotalAmount() === 0 ? "" : "dot"}></div>
+          <div className={getTotalAmount() === 0 ? "" : "dot"}> </div>
         </div>
         <button onClick={() => showLogin(true)}>sign in</button>
       </div>
