@@ -1,13 +1,20 @@
 //dependencies
-const express = require("express");
+import express from "express";
+import dotenv from "dotenv";
+import cors from "cors";
 const app = express();
-const dotenv = require("dotenv");
-const cors = require("cors");
+// const dotenv = require("dotenv");
+// const cors = require("cors");
+import { connectDb } from "./config/db.js";
 dotenv.config();
 
 // middleware
 app.use(express.json());
 app.use(cors());
+
+// DB CONNECTION
+connectDb();
+// DB CONNECTION
 
 // response
 app.get("/", (req, res) => {
