@@ -21,4 +21,18 @@ const addFoodItem = async (req, res) => {
   }
 };
 
-module.exports = addFoodItem;
+// Getting all the food from database
+const getFood = async (req, res) => {
+  try {
+    const foods = await Food.find(
+      {},
+      "_id name description price image category createdAt"
+    );
+    res.json({ success: true, data: foods });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: "Error" });
+  }
+};
+
+module.exports = { addFoodItem: addFoodItem, getFoodItem: getFood };
