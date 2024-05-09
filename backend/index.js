@@ -1,11 +1,10 @@
 //dependencies
-import express from "express";
-import dotenv from "dotenv";
-import cors from "cors";
+const express = require("express");
+const cors = require("cors");
+const dotenv = require("dotenv");
+const connectDb = require("./config/db.js");
+const foodRouter = require("./routes/foodRoute");
 const app = express();
-// const dotenv = require("dotenv");
-// const cors = require("cors");
-import { connectDb } from "./config/db.js";
 dotenv.config();
 
 // middleware
@@ -15,6 +14,9 @@ app.use(cors());
 // DB CONNECTION
 connectDb();
 // DB CONNECTION
+
+// API ENDPOINT
+app.use("/api/food", foodRouter);
 
 // response
 app.get("/", (req, res) => {
