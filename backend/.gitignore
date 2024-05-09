@@ -23,7 +23,7 @@
 .env.*.local
 .env
 # Ignore uploads (assuming it's user-generated content)
-uploads
+/uploads/
 
 # Ignore any IDE or editor specific files
 .vscode/
