@@ -22,3 +22,4 @@ foodRouter.post("/add", upload.single("image"), addFoodItem);
 foodRouter.get("/listFoods", getFoodItem);
 
 module.exports = foodRouter;
+
