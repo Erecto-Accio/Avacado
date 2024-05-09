@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-
+const mongoose = require("mongoose");
 const foodSchema = new mongoose.Schema(
   {
     name: {
@@ -26,4 +25,4 @@ const foodSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export const Food = mongoose.model("Food", foodSchema);
+module.exports = Food = mongoose.model("Food", foodSchema);
