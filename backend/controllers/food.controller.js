@@ -35,4 +35,21 @@ const getFood = async (req, res) => {
   }
 };
 
-module.exports = { addFoodItem: addFoodItem, getFoodItem: getFood };
+//removing food
+const removeFood = async (req, res) => {
+  try {
+    const food = await Food.findById(req.body.id);
+    fs.unlink(`uploads/${food.image}`, () => {});
+
+    await Food.findByIdAndDelete(req.body.id);
+    res.json({ success: true, message: "Food Deleted" });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: "Error" });
+  }
+};
+module.exports = {
+  addFoodItem: addFoodItem,
+  getFoodItem: getFood,
+  removeFoodItem: removeFood,
+};
