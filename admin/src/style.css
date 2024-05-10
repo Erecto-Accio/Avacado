@@ -22,3 +22,13 @@ hr {
   border: none;
   background-color: #a9a9a9;
 }
+
+.app-content {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
